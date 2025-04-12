@@ -1,0 +1,22 @@
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>파일 업로드</title>
+</head>
+
+<body>
+<h1>단일 파일 업로드</h1>
+<form action="/api/v1/local-file/upload" method="post" enctype="multipart/form-data">
+    <label for="singleFile">파일 선택:</label>
+    <input type="file" id="singleFile" name="file" required>
+    <button type="submit">업로드</button>
+</form>
+
+<h1>다중 파일 업로드</h1>
+<form action="/api/v1/local-file/upload-multiple" method="post" enctype="multipart/form-data">
+    <label for="multipleFiles">파일 선택:</label>
+    <input type="file" id="multipleFiles" name="files" multiple required>
+    <button type="submit">업로드</button>
+</form>
+</body>
+</html>

@@ -15,3 +15,13 @@ spring:
     console:
       enabled: true
       path: '/h2-console'
+
+  # 파일 사이즈
+  servlet:
+    multipart:
+      max-request-size: 500MB
+      max-file-size: 500MB
+
+# 로컬 파일 업로드 경로
+
+
