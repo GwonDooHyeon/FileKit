@@ -33,6 +33,9 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
 
+    // 테스트용 프론트 화면
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
+
     // H2
     runtimeOnly("com.h2database:h2")
 
