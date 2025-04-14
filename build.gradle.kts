@@ -25,7 +25,6 @@ repositories {
 
 dependencies {
     // Spring Boot
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-web")
 
@@ -35,9 +34,6 @@ dependencies {
 
     // 테스트용 프론트 화면
     implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
-
-    // H2
-    runtimeOnly("com.h2database:h2")
 
     // Test
     testImplementation("org.springframework.boot:spring-boot-starter-test")
