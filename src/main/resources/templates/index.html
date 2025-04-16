@@ -5,18 +5,26 @@
 </head>
 
 <body>
-<h1>단일 파일 업로드</h1>
-<form action="/api/v1/local-file/upload" method="post" enctype="multipart/form-data">
+
+<!-- C:\\Users\\PC\\Desktop\\images\\ -->
+<form action="/api/v1/local-file/upload" method="POST" enctype="multipart/form-data">
+    <!-- 파일 선택 -->
     <label for="singleFile">파일 선택:</label>
     <input type="file" id="singleFile" name="file" required>
-    <button type="submit">업로드</button>
+
+    <!-- 경로 입력 -->
+    <label for="path">파일을 업로드할 경로:</label>
+    <input type="text" id="path" name="uploadPath" value="Users/doo/Desktop/images" required>
+
+    <!-- 제출 버튼 -->
+    <button type="submit">파일 업로드</button>
 </form>
 
-<h1>다중 파일 업로드</h1>
-<form action="/api/v1/local-file/upload-multiple" method="post" enctype="multipart/form-data">
-    <label for="multipleFiles">파일 선택:</label>
-    <input type="file" id="multipleFiles" name="files" multiple required>
-    <button type="submit">업로드</button>
-</form>
+<!--<h1>다중 파일 업로드</h1>-->
+<!--<form action="/api/v1/local-file/upload-multiple" method="post" enctype="multipart/form-data">-->
+<!--    <label for="multipleFiles">파일 선택:</label>-->
+<!--    <input type="file" id="multipleFiles" name="files" multiple required>-->
+<!--    <button type="submit">업로드</button>-->
+<!--</form>-->
 </body>
 </html>
