@@ -50,14 +50,6 @@ public abstract class LocalFileKit {
         return "파일 업로드 성공: " + fullPath;
     }
 
-    public static File download(String filePath) {
-        File file = new File(filePath);
-        if (!file.exists()) {
-            throw new IllegalArgumentException("파일이 존재하지 않습니다: " + filePath);
-        }
-        return file;
-    }
-
     private static void validateFileSize(long fileSize, Long maxFileSizeInMB) {
         long maxFileSizeInBytes = maxFileSizeInMB * 1024 * 1024; // MB를 바이트로 변환
         if (fileSize > maxFileSizeInBytes) {
